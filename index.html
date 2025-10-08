@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>みんなの日中交流会</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #c31432 0%, #ff6b6b 50%, #ffd93d 100%);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .welcome-section {
+            text-align: center;
+            padding: 2rem 0;
+            background: #f8f9fa;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+
+        .welcome-section h2 {
+            color: #c31432;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .info-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .card h3 {
+            color: #c31432;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .card-icon {
+            font-size: 2rem;
+            margin-right: 0.5rem;
+        }
+
+        .card p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .highlight {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .highlight h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .activities {
+            background: #fff8e1;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+
+        .activities h3 {
+            color: #f57c00;
+            margin-bottom: 1rem;
+        }
+
+        .activities ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .activities li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .activities li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #f57c00;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+        }
+
+        .map-note {
+            background: #e3f2fd;
+            padding: 1rem;
+            border-left: 4px solid #2196f3;
+            margin: 1rem 0;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            .info-cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>みんなの日中交流会</h1>
+        <p>日本と中国の文化交流・言語交換の場</p>
+    </header>
+
+    <div class="container">
+        <div class="welcome-section">
+            <h2>ようこそ！欢迎！</h2>
+            <p>日本語を学びたい中国の方、中国語を学びたい日本の方、<br>
+            みんなで楽しく交流しましょう！</p>
+        </div>
+
+        <div class="info-cards">
+            <div class="card">
+                <h3><span class="card-icon">📍</span>場所</h3>
+                <p><strong>西池袋公園</strong></p>
+                <p>〒171-0021<br>東京都豊島区西池袋3丁目20-1</p>
+                <div class="map-note">
+                    <small>📌 池袋駅西口から徒歩約5分</small>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3><span class="card-icon">🕐</span>開催時間</h3>
+                <p><strong>毎週土曜日・日曜日</strong></p>
+                <p style="font-size: 1.3rem; color: #c31432; font-weight: bold; margin-top: 1rem;">
+                    午後2時 〜 午後5時
+                </p>
+                <p style="margin-top: 1rem; font-size: 0.9rem;">
+                    ※雨天の場合は中止となります
+                </p>
+            </div>
+
+            <div class="card">
+                <h3><span class="card-icon">💰</span>参加費</h3>
+                <p><strong>無料</strong></p>
+                <p style="margin-top: 1rem;">予約不要・途中参加OK！<br>お気軽にお越しください</p>
+            </div>
+        </div>
+
+        <div class="highlight">
+            <h3>🎉 こんな方におすすめ！</h3>
+            <p>✨ 日本語・中国語を実践的に使いたい方<br>
+            ✨ 異文化交流に興味がある方<br>
+            ✨ 新しい友達を作りたい方<br>
+            ✨ 留学や旅行の情報交換をしたい方</p>
+        </div>
+
+        <div class="activities">
+            <h3>📋 主な活動内容</h3>
+            <ul>
+                <li>日本語・中国語での会話練習</li>
+                <li>文化や習慣についての情報交換</li>
+                <li>グループディスカッション</li>
+                <li>言語学習のアドバイス交換</li>
+                <li>季節のイベント（不定期開催）</li>
+            </ul>
+        </div>
+
+        <div class="card" style="text-align: center; margin-top: 2rem;">
+            <h3>📢 初めての方へ</h3>
+            <p>初参加の方も大歓迎！<br>
+            スタッフが丁寧にご案内いたします。<br>
+            飲み物や筆記用具をお持ちいただくと便利です。</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 日中交流会 - 西池袋公園</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;">
+            文化の架け橋となることを目指して | Building bridges between cultures
+        </p>
+    </footer>
+</body>
+</html>
